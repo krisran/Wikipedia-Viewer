@@ -1,11 +1,3 @@
-  $("#searchTerm").keyup(function(event) {
-   if (event.keyCode == 13) {
-     $("#wiki-heading").html("");
-     $("#wiki-result").html("");
-     searchWikipedia($("#searchTerm").val());
-   }
-  });
-
 function searchWikipedia(searchValue) {
 
  if (searchValue === null || searchValue === undefined || searchValue === "") {
@@ -22,7 +14,7 @@ function searchWikipedia(searchValue) {
        for (var i = 9; i >= 0; --i) {
          $("#wiki-result").prepend("<div class=\"wiki-card\"><h2>" + data[1][i] + "</h2><p class=\"wiki-snippet\">" + data[2][i] + "</p><p><a target=\"_blank\" href=" + data[3][i] + ">Link</a></p></div>");
        }
-       $("#wiki-result").prepend("<p class=\"title\">Results for: <em>" + searchValue + "</em></p>");
+        $("#wiki-result").prepend("<p class=\"title\">Results for: <em>" + searchValue + "</em></p>");
      },
 
      error: function(errorMessage) {
