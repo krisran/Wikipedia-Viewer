@@ -1,3 +1,10 @@
+  $("#searchTerm").keyup(function(event) {
+   if (event.keyCode == 13) {
+     $("#wiki-heading").html("");
+     $("#wiki-result").html("");
+     searchWikipedia($("#searchTerm").val());
+   }
+  });
 
 function searchWikipedia(searchValue) {
 
