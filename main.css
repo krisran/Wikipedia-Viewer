@@ -1,0 +1,81 @@
+/* include the border, padding as part of the box model height and width calculations */
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@media (max-width: 480px) {
+  .contentArea {
+    padding: 0.25em;
+  }
+}
+@media (min-width: 481px) {
+  .contentArea {
+    padding: 2em;
+  }
+}
+
+body {
+	background-color: #f9f9f9;
+	font-family: Raleway, sans-serif;
+	color: #555;
+}
+a:link {
+  color: #C94848;
+	text-decoration: none;
+}
+a:visited {
+    color: #C94848;
+}
+a:hover {
+    color: #E6ADAD;
+}
+a:active {
+    color: #48C9C9;
+}
+h1 {
+  color: #C94848;
+  font-weight: normal;
+  font-size: 2.5em;
+}
+h2 {
+	font-weight: normal;
+	font-size: 1.5em;
+	color: #333;
+}
+.contentArea {
+  margin: 0 auto;
+	min-width: 300px;
+  max-width: 640px;
+  text-align: center;
+}
+.wiki-card {
+  background-color: white;
+  padding: 1em;
+  margin: 1em 0 1em 0;
+	border: 1px solid #f1f1f1;
+  border-radius: 4px;
+}
+.wiki-result {
+  text-align: left;
+	line-height: 1.4em;
+  padding: 1em;
+}
+.title {
+  font-size: 1.5em;
+	padding: 1em;
+	margin-top: -1em;
+}
+
+input[type=text]:focus {
+  background-color: #F9EBEB;
+	border: 4px solid #f1f1f1;
+}
+input[type=text] {
+   width: 50%;
+   box-sizing: border-box;
+   border: 2px solid #f1f1f1;
+   border-radius: 4px;
+   font-size: 16px;
+   background-color: white;
+   padding: 12px 20px 12px 20px;
+}
