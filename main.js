@@ -1,5 +1,5 @@
 function searchWikipedia(searchValue) {
-var results = false;
+var result = false;
  
  if (searchValue === null || searchValue === undefined || searchValue === "") {
    alert("Enter text in the textbox to a search Wikipedia!");
